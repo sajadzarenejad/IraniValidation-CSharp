@@ -34,7 +34,7 @@ namespace IraniValidator
         {
             var regexgen = new ReqularExpressionFactory(type);
 
-            var regex = new Regex(regexgen.HamrahAvalExpressionMaker());
+            var regex = new Regex(regexgen.IrancellExpressionMaker());
 
             return regex.IsMatch(mobile);
 
@@ -43,7 +43,7 @@ namespace IraniValidator
         {
             var regexgen = new ReqularExpressionFactory(type);
 
-            var regex = new Regex(regexgen.HamrahAvalExpressionMaker());
+            var regex = new Regex(regexgen.RightelExpressionMaker());
 
             return regex.IsMatch(mobile);
 

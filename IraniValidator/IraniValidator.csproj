@@ -2,6 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageId>IraniValidator.core</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Sajad Zarenejad</Authors>
+    <Company>3nobar</Company>
+    <Product>IraniValidator</Product>
+    <Description>Extention methods for Iranian mobile and national Id and some other values validation.</Description>
+    <PackageIconUrl>http://3nobar.net/StaticFiles/images/logo/logo2.png</PackageIconUrl>
+    <RepositoryType>github</RepositoryType>
+    <RepositoryUrl>https://github.com/sajadzarenejad/IraniValidation-CSharp</RepositoryUrl>
+    <PackageTags>iranian Mobile validation nationalId</PackageTags>
+    <NeutralLanguage>fa-IR</NeutralLanguage>
+    <PackageProjectUrl>https://github.com/sajadzarenejad/IraniValidation-CSharp</PackageProjectUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/GPL-3.0</PackageLicenseUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>3</WarningLevel>
   </PropertyGroup>
 
 </Project>

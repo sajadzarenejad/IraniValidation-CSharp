@@ -8,6 +8,11 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Nuget Files
+*.nupkg
+*.nuspec
+
+
 # User-specific files
 *.rsuser
 *.suo
