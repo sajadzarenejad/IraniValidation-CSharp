@@ -2,9 +2,15 @@ namespace IraniValidator
 {
     internal class ReqularExpressionFactory
     {
-        public static string HamrahAvalExpressionMaker(PhoneFormatType phoneFormat)
+        private readonly PhoneFormatType _phoneFormat;
+
+        public ReqularExpressionFactory(PhoneFormatType phoneFormat)
         {
-            switch (phoneFormat)
+            _phoneFormat = phoneFormat;
+        }
+        public string HamrahAvalExpressionMaker()
+        {
+            switch (_phoneFormat)
             {
                 default : case PhoneFormatType.StartWithZero :
                     return "09(1[0-9]|90)-?[0-9]{3}-?[0-9]{4}";
@@ -18,9 +24,9 @@ namespace IraniValidator
             }
         }
 
-        public static string IrancellExpressionMaker(PhoneFormatType phoneFormat)
+        public string IrancellExpressionMaker()
         {
-            switch (phoneFormat)
+            switch (_phoneFormat)
             {
                 default:
                 case PhoneFormatType.StartWithZero:
@@ -35,9 +41,9 @@ namespace IraniValidator
             }
         }
 
-        public static string RightelExpressionMaker(PhoneFormatType phoneFormat)
+        public string RightelExpressionMaker()
         {
-            switch (phoneFormat)
+            switch (_phoneFormat)
             {
                 default:
                 case PhoneFormatType.StartWithZero:
