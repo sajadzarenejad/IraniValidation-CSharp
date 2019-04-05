@@ -23,7 +23,7 @@ namespace IraniValidator
 
         static bool HamrahavalValidation(string mobile,PhoneFormatType type)
         {
-            var regexgen = new ReqularExpressionFactory(type);
+            var regexgen = new PhoneReqularExpressionFactory(type);
 
             var regex = new Regex(regexgen.HamrahAvalExpressionMaker());
 
@@ -32,7 +32,7 @@ namespace IraniValidator
         }
         static bool IrancellValidation(string mobile, PhoneFormatType type)
         {
-            var regexgen = new ReqularExpressionFactory(type);
+            var regexgen = new PhoneReqularExpressionFactory(type);
 
             var regex = new Regex(regexgen.IrancellExpressionMaker());
 
@@ -41,7 +41,7 @@ namespace IraniValidator
         }
         static bool RightelValidation(string mobile, PhoneFormatType type)
         {
-            var regexgen = new ReqularExpressionFactory(type);
+            var regexgen = new PhoneReqularExpressionFactory(type);
 
             var regex = new Regex(regexgen.RightelExpressionMaker());
 
