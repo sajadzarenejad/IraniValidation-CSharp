@@ -16,7 +16,7 @@
     <NeutralLanguage>fa-IR</NeutralLanguage>
     <PackageProjectUrl>https://github.com/sajadzarenejad/IraniValidation-CSharp</PackageProjectUrl>
     <PackageLicenseUrl>https://opensource.org/licenses/GPL-3.0</PackageLicenseUrl>
-    <Version>1.2.0</Version>
+    <Version>1.3.0</Version>
     <PackageReleaseNotes>in this release computer and internet values such as ip address, email and etc added.</PackageReleaseNotes>
   </PropertyGroup>
 
