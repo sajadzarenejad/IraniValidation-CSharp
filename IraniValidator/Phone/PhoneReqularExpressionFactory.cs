@@ -13,11 +13,11 @@ namespace IraniValidator
             switch (_phoneFormat)
             {
                 default : case PhoneFormatType.StartWithZero :
-                    return "09(1[0-9]|90)-?[0-9]{3}-?[0-9]{4}";
+                    return "09(1[0-9]|90|91|92|93|94)-?[0-9]{3}-?[0-9]{4}";
                 case PhoneFormatType.StartWith98:
-                    return "989(1[0-9]|90)-?[0-9]{3}-?[0-9]{4}";
+                    return "989(1[0-9]|90|91|92|93|94)-?[0-9]{3}-?[0-9]{4}";
                 case PhoneFormatType.StartWith9:
-                    return "9(1[0-9]|90)-?[0-9]{3}-?[0-9]{4}";
+                    return "9(1[0-9]|90|91|92|93|94)-?[0-9]{3}-?[0-9]{4}";
 
             }
         }
